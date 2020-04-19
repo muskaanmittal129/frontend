@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/landing.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    
+    </head>
+</html>
+<body onload="active_link()">
+<!-- .landing-section -->
+<section>
+
+<!-- navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg navbar-dark landing_nav">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+      <!-- Links -->
+    <ul class="navbar-nav ml-auto  landing_link content">
+        <li class="nav-item" id="landing_link_active">
+          <a class="nav-link landing_home_link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TV Shows</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Kids</a>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+      <form class="">
+        <div class="landing_searchbar my-0 content">
+          <input class="mr-sm-2" type="text" placeholder="Search" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </form>
+    
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+</section>
+<!-- navbar -->
+
+</section>
+<!-- .landing-section -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+<!-- javascript -->
+<script>
+   function active_link(){
+        var x = document.getElementById("landing_link_active");
+        x.classList.add("active");
+    }
+</script>
+</body>

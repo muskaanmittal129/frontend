@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* common */
+.content{
+    font-size: 1rem;
+    font-family: Montserrat;
+}
+/* common */
+
+/* landing */
+
+/* navbar */
+.landing_nav{
+    background-color: #203345;
+    padding: 0 1rem!important;
+}
+.landing_home_link{
+    background-color: transparent!important;
+}
+.landing_link a {
+    padding: 1rem 0rem!important;
+    color: #a9b1b0!important;
+    font-weight: 700!important;
+    
+}
+.landing_link li {
+    
+    margin: 0 1rem!important;
+    
+    
+}
+.landing_link a:hover {
+     color: #fff!important;
+}
+.active a {
+    border-top: 3px solid #2684fe;
+    color:#fff!important;
+    padding: .8rem 0rem!important;
+}
+.landing_searchbar input{
+    border:0!important;
+    background-color:#455662!important;
+    border-radius: 5px!important;
+    padding: .3rem .7rem;
+    margin-left: 1.3rem;
+    width: 13rem;
+}
+::placeholder{
+    color: rgb(255,255,255,0.6);
+    font-size: .9rem!important;
+    font-weight: 600;
+}
+.fa-search:before {
+    margin-left: -2.3rem;
+    color: rgb(255,255,255,0.8);
+}
+
+/* landing */
