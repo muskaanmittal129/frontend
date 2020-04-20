@@ -25,6 +25,12 @@ body{
     float: left;
     margin:.2rem .7rem 0 0;
 }
+.dispaly_block{
+   display: block; 
+}
+.dispaly_none{
+    display: none;
+}
 /* common */
 
 /* landing */
@@ -96,7 +102,7 @@ body{
     z-index: 5000;
 }
 .landing_img img{
-    box-shadow : 0px 8px 20px rgba( 0,0,0,0.1);
+    box-shadow: 3px 3px 20px 0 rgba(0,0,0,.5); 
     border-radius:5px!important;
 }
 .landing_video_col iframe {
@@ -162,15 +168,18 @@ body{
 
 /* second-section */
 .second_cards img{
-    /* position: absolute;
-    z-index: 400; */
+    
+    z-index: 400;
     border-radius: 10px;
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,.5); 
 }
 .second_cards img:hover{
     position: absolute;
+    right:0;
+    left: 0;
     z-index: 500;
-    transform: scale(1.16);
+    margin-top: 1.3rem;
+    transform: scale(1.15,1.25);
     -webkit-transition: .5s; 
 }
 .second_cards{
@@ -202,7 +211,28 @@ body{
 .grey_box{
     padding: 0!important;
 }
+.grey_para{
+    padding:0 3.5rem 0 1rem;
+    font-size: .7rem;
+    font-family: Poppins;
+    font-weight: 100;
+
+}
+.second_ul li{
+    display: inline-block!important;
+    padding:0 1rem;
+    font-size: .7rem;
+    font-family: Poppins;
+    font-weight: 100;
+    color: #a9b1b0;
+}
 /* second-section */
+
+/* third-section */
+.third_margin{
+    margin:2rem 0 0 4rem!important;
+}
+/* third-section */
 
 /* media_queries */
 @media only screen and (max-width:1024px){
