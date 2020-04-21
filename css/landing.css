@@ -25,11 +25,11 @@ body{
     float: left;
     margin:.2rem .7rem 0 0;
 }
-.dispaly_block{
-   display: block; 
+.display_block{
+   display: block!important; 
 }
-.dispaly_none{
-    display: none;
+.display_none{
+    display: none!important;
 }
 /* common */
 
@@ -168,26 +168,33 @@ body{
 
 /* second-section */
 .second_cards img{
-    
+    position: absolute;
     z-index: 400;
+    left:.8rem;
     border-radius: 10px;
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,.5); 
+    
 }
 .second_cards img:hover{
     position: absolute;
     right:0;
     left: 0;
     z-index: 500;
-    margin-top: 1.3rem;
-    transform: scale(1.15,1.25);
+    margin-top: 1.3rem!important;
+    margin-left: .75rem!important;
+    transform: scale(1.25,1.25);
     -webkit-transition: .5s; 
 }
 .second_cards{
     height: 11rem!important;
+    padding: 0!important;
     
 }
+/* .second_img{
+    margin: 0 1rem!important;
+} */
 .second_container{
-    padding: 1.5rem 4rem!important;
+    padding: 1rem 4rem!important;
 }
 .second_margin{
     margin: 3.5rem 0 0 4rem!important;
@@ -198,19 +205,21 @@ body{
     box-shadow:0px 8px 20px rgba( 0,0,0,0.1); 
     font-family: 'Poppins';
     font-weight: 700;
+    margin-top: -1rem;
     position: absolute;
-    z-index: -5;
-    top:-2rem;
+    z-index: 300;
+    top:10rem;
     left:0rem;
+    text-align: left!important;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,.5); 
 
     
 }
-.second_grey_heading{
-    padding: 2.7rem 1rem 0;
+.second_grey_heading {
+    padding: 5.5rem 1rem 0;
 }
-.grey_box{
-    padding: 0!important;
-}
+
 .grey_para{
     padding:0 3.5rem 0 1rem;
     font-size: .7rem;
@@ -231,6 +240,29 @@ body{
 /* third-section */
 .third_margin{
     margin:2rem 0 0 4rem!important;
+}
+.third_cards img{
+    /* position: absolute;
+    z-index: 400;
+    left:.8rem; */
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,.5); 
+    
+}
+.third_cards img:hover{
+    position: absolute;
+    right:0;
+    left: 0;
+    z-index: 500;
+    margin-top: 1.3rem!important;
+    margin-left: .75rem!important;
+    transform: scale(1.25,1.25);
+    -webkit-transition: .5s; 
+}
+.third_cards{
+    height: 11rem!important;
+    padding: 0!important;
+    
 }
 /* third-section */
 
