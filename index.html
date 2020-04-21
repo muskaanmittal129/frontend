@@ -23,7 +23,7 @@
 
 <!-- navbar -->
 <section>
-  <nav class="navbar navbar-expand-lg landing_nav">
+  <nav class="navbar navbar-expand-lg landing_nav fixed-top">
 
   <!-- Navbar brand -->
   <a class="navbar-brand" href="#"><img class="img-fluid landing_logo" src="images/landing/flux_logo.png" alt="flux_logo"></a>
@@ -92,16 +92,16 @@
 </section>
 
 <!-- .second-section/ -->
-<section>
+<section class="second_container">
   <div class="second_margin">
     <span class="vertical_line"></span>
     <h3 class="heading">Fan Favorites</h3>
   </div>
   
-  <div class="container-fluid second_container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 second_cards text-center" >
-        <img class="second_img" width="93%" height="100%" src="images/landing/download.jpg" onmouseover="desc()" onmouseout="nodesc()">
+      <div id="first" class="col-md-3 second_cards text-center"  onmouseover="desc(this)" onmouseout="nodesc(this)" >
+        <img id="first_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
         <div id="first_desc" class="hover_grey_box display_none">
         <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
         <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
@@ -113,9 +113,9 @@
         </ul>
       </div>
       </div>
-      <div class="col-md-3 second_cards text-center">
-        <img class="second_img" width="93%" height="100%" src="images/landing/download (1).jpg">
-        <div class="hover_grey_box display_none ">
+      <div id="second" class="col-md-3 second_cards text-center" onmouseover="desc(this)" onmouseout="nodesc(this)">
+        <img id="second_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download (1).jpg">
+        <div id="second_desc" class="hover_grey_box display_none ">
         <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
         <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
         <ul class="second_ul" type="none">
@@ -126,9 +126,9 @@
         </ul>
       </div>
       </div>
-      <div class="col-md-3 second_cards text-center">
-        <img class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
-        <div class="hover_grey_box display_none ">
+      <div id="third" class="col-md-3 second_cards text-center" onmouseover="desc(this)" onmouseout="nodesc(this)">
+        <img id="third_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
+        <div id="third_desc" class="hover_grey_box display_none ">
         <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
         <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
         <ul class="second_ul" type="none">
@@ -139,9 +139,9 @@
         </ul>
       </div>
       </div>
-      <div class="col-md-3 second_cards text-center">
-        <img class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
-        <div class="hover_grey_box display_none ">
+      <div id="fourth" class="col-md-3 second_cards text-center" onmouseover="desc(this)" onmouseout="nodesc(this)">
+        <img id="fourth_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
+        <div id="fourth_desc" class="hover_grey_box display_none ">
         <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
         <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
         <ul class="second_ul" type="none">
@@ -153,74 +153,70 @@
       </div>
       </div>
       </div>
-
-      
-
-  <!-- <div style="padding: 0 4rem;" class="container-fluid dispaly_none">
-    <div class="row">
-      <div class="col-md-3 grey_box hover_grey_box">
-        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
-        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
-        <ul class="second_ul" type="none">
-          <li>2 hr 33 min.</li>
-          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
-          <li>4.3</li>
-          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
-        </ul>
-      </div>
-      <div class="col-md-3 grey_box hover_grey_box">
-        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
-        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
-        <ul class="second_ul" type="none">
-          <li>2 hr 33 min.</li>
-          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
-          <li>4.3</li>
-          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
-        </ul>
-      </div>
-      <div class="col-md-3 grey_box hover_grey_box">
-        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
-        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
-        <ul class="second_ul" type="none">
-          <li>2 hr 33 min.</li>
-          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
-          <li>4.3</li>
-          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
-        </ul>
-      </div>
-      <div class="col-md-3 grey_box hover_grey_box">
-        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
-        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
-        <ul class="second_ul" type="none">
-          <li>2 hr 33 min.</li>
-          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
-          <li>4.3</li>
-          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-  
 </section>
 
 <!-- .third-section/ -->
-<section>
-  <div class="third_margin">
+<section class="second_container">
+  <div class="second_margin">
     <span class="vertical_line"></span>
     <h3 class="heading">Fan Favorites</h3>
   </div>
   
-  <div class="container-fluid second_container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 third_cards text-center">
-        <img  width="93%" height="100%" src="images/landing/download.jpg">
-        
+      <div id="fifth" class="col-md-3 second_cards third_cards text-center" onmouseover="desc(this)" onmouseout="nodesc(this)">
+        <img id="fifth_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
+        <div id="fifth_desc" class="hover_grey_box third_grey_box display_none">
+        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
+        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
+        <ul class="second_ul" type="none">
+          <li>2 hr 33 min.</li>
+          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
+          <li>4.3</li>
+          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
+        </ul>
       </div>
-      <div class="col-md-3 third_cards text-center"><img  width="93%" height="100%" src="images/landing/download (1).jpg"></div>
-      <div class="col-md-3 third_cards text-center"><img  width="93%" height="100%" src="images/landing/download.jpg"></div>
-      <div class="col-md-3 third_cards text-center"><img  width="93%" height="100%" src="images/landing/download.jpg"></div>
-    </div>
-  </div>
+      </div>
+      <div id="six" class="col-md-3 second_cards third_cards text-center" onmouseover="desc(this)" onmouseout="nodesc(this)">
+        <img id="six_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download (1).jpg">
+        <div id="six_desc" class="hover_grey_box third_grey_box display_none ">
+        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
+        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
+        <ul class="second_ul" type="none">
+          <li>2 hr 33 min.</li>
+          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
+          <li>4.3</li>
+          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
+        </ul>
+      </div>
+      </div>
+      <div id="seven" class="col-md-3 second_cards third_cards text-center" onmouseover="desc(this)" onmouseout="nodesc(this)">
+        <img id="seven_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
+        <div id="seven_desc" class="hover_grey_box third_grey_box display_none ">
+        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
+        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
+        <ul class="second_ul" type="none">
+          <li>2 hr 33 min.</li>
+          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
+          <li>4.3</li>
+          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
+        </ul>
+      </div>
+      </div>
+      <div id="eight" class="col-md-3 second_cards third_cards text-center" onmouseover="desc(this)" onmouseout="nodesc(this)">
+        <img id="eight_imgdesc" class="second_img" width="93%" height="100%" src="images/landing/download.jpg">
+        <div id="eight_desc" class="hover_grey_box third_grey_box display_none ">
+        <div class="second_grey_heading" ><h5><i  style="margin-right:1rem;" class="fas fa-play-circle"></i>Money Heist<i  style="float: right;" class="fa fa-plus" aria-hidden="true"></i></h5></div>
+        <p class="grey_para">Lives are on the line as the Professor's plan begins to unravel .</p>
+        <ul class="second_ul" type="none">
+          <li>2 hr 33 min.</li>
+          <li style="border-left:.5px solid #a9b1b0; border-right:.5px solid #a9b1b0;">2019</li>
+          <li>4.3</li>
+          <li style="border:.5px solid #a9b1b0; margin-left:5rem;">UA</li>
+        </ul>
+      </div>
+      </div>
+      </div>
 </section>
 
 </section>
@@ -239,17 +235,23 @@
         var x = document.getElementById("landing_link_active");
         x.classList.add("active");
     }
-    function desc(){
-      var y = document.getElementById("first_desc");
-      console.log(y);
-      y.classList.remove("display_none")
-      y.classList.add("display_block");
+    function desc(second_col){
+      var y = second_col.id+"_desc";
+      var z = second_col.id+"_imgdesc";
+      var x = document.getElementById(y);
+      var a = document.getElementById(z);
+      x.classList.remove("display_none");
+      x.classList.add("display_block");
+      a.classList.add("second_cards_img_hover");
     }
-    function nodesc(){
-      var y = document.getElementById("first_desc");
-      console.log(y);
-      y.classList.remove("display_block")
-      y.classList.add("display_none");
+    function nodesc(second_col){
+      var y = second_col.id+"_desc";
+      var z = second_col.id+"_imgdesc";
+      var x = document.getElementById(y);
+      var a = document.getElementById(z);
+      a.classList.remove("second_cards_img_hover");
+      x.classList.remove("display_block");
+      x.classList.add("display_none");
     }
 </script>
 </body>

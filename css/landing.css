@@ -5,6 +5,7 @@
 }
 body{
     background-color: #152535!important;
+    margin-top: 3.4rem!important;
 }
 /* common */
 .content{
@@ -26,6 +27,7 @@ body{
     margin:.2rem .7rem 0 0;
 }
 .display_block{
+    
    display: block!important; 
 }
 .display_none{
@@ -33,33 +35,26 @@ body{
 }
 /* common */
 
-/* landing */
-
 /* navbar */
 .landing_logo{
-    margin-left: 3rem;
     padding-top: 8px!important;
 }
 .landing_nav{
     background-color: #203345;
-    padding: 0 1rem!important;
+    padding: 0 4rem!important;
+    z-index: 5000;
 }
 .landing_home_link{
     background-color: transparent!important;
 }
-
 .landing_link a {
     padding: 1rem 0rem!important;
     color: #a9b1b0!important;
     font-weight: 700!important;
     letter-spacing: 1px;
-    
 }
 .landing_link li {
     margin: 0 1rem!important;
-}
-.landing_right_links{
-    margin-right: 3rem;
 }
 .landing_link a:hover {
      color: #fff!important;
@@ -90,6 +85,9 @@ body{
 .landing_nav_contact{
     margin-left: 2rem;
 }
+/* navbar */
+
+/* landing */
 .landing_video_col{
     padding: 0!important;
     position: relative;
@@ -99,7 +97,7 @@ body{
 .landing_image_col{
     padding: 4rem 0 0 4rem!important;
     position: absolute;
-    z-index: 5000;
+    z-index: 4;
 }
 .landing_img img{
     box-shadow: 3px 3px 20px 0 rgba(0,0,0,.5); 
@@ -114,10 +112,11 @@ body{
     content: '';
     position: absolute;
     z-index: 2;
-    --webkit-box-shadow: inset 200px 10px 300px -153px rgba(255,255,255,0.59);
+    /* --webkit-box-shadow: inset 200px 10px 300px -153px rgba(255,255,255,0.59);
     -moz-box-shadow: inset 200px 10px 300px -153px rgba(255,255,255,0.59);
     box-shadow: inset 200px 10px 300px -153px rgba(255,255,255,0.59);
-    background-color:rgb(255,255,255,0.1);
+    background-color:rgb(255,255,255,0.1); */
+    background-image: linear-gradient(to right, rgba(21,37,53,1), rgba(255,255,255,0.2),rgba(21,37,53,0.1),rgba(21,37,53,0.1),rgba(169,177,176,0.2));
     top: 0;
     right: 0;
     bottom: 0;
@@ -134,21 +133,16 @@ body{
     position: absolute;
     z-index: 3;
     top:23.5rem;
-    left:3.9rem;
+    left:4rem;
 }
 .landing_text{
-    position: absolute;
-    top:27.5rem;
-    left:3.9rem;
-    right:25rem;
+    padding:.5rem 15rem 0 5rem;
     color: #a9b1b0;
 }
 .landing_mybtn{
     background-color:#152535!important;
     border: 1.5px solid #fff!important;
     color: #fff!important;
-    
-
 }
 .landing_btn{
     margin:1rem 1.3rem 0 0!important;
@@ -162,42 +156,40 @@ body{
 }
 .landing_ul{
     display: inline-block;
-   
 }
 /* landing */
 
 /* second-section */
 .second_cards img{
     position: absolute;
-    z-index: 400;
+    z-index: 9;
     left:.8rem;
-    border-radius: 10px;
+    border-radius:5px;
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,.5); 
-    
 }
-.second_cards img:hover{
+/* .second_cards img:hover{
     position: absolute;
-    right:0;
-    left: 0;
-    z-index: 500;
+    z-index: 10;
     margin-top: 1.3rem!important;
-    margin-left: .75rem!important;
-    transform: scale(1.25,1.25);
+    transform: scale(1.17,1.25);
+    -webkit-transition: .5s; 
+} */
+.second_cards_img_hover{
+    position: absolute;
+    z-index: 10;
+    margin-top: 1.3rem!important;
+    transform: scale(1.17,1.25);
     -webkit-transition: .5s; 
 }
 .second_cards{
     height: 11rem!important;
     padding: 0!important;
-    
 }
-/* .second_img{
-    margin: 0 1rem!important;
-} */
 .second_container{
-    padding: 1rem 4rem!important;
+    padding: 3.5rem 4rem 0!important;
 }
 .second_margin{
-    margin: 3.5rem 0 0 4rem!important;
+    margin-bottom: 1rem;
 }
 .hover_grey_box{
     color: #fff;
@@ -205,27 +197,24 @@ body{
     box-shadow:0px 8px 20px rgba( 0,0,0,0.1); 
     font-family: 'Poppins';
     font-weight: 700;
-    margin-top: -1rem;
     position: absolute;
-    z-index: 300;
+    z-index: 8;
     top:10rem;
     left:0rem;
     text-align: left!important;
     border-radius: 5px;
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,.5); 
-
-    
 }
 .second_grey_heading {
-    padding: 5.5rem 1rem 0;
+    padding: 4.5rem 1rem 0;
 }
-
 .grey_para{
     padding:0 3.5rem 0 1rem;
-    font-size: .7rem;
+    font-size: .8rem;
     font-family: Poppins;
-    font-weight: 100;
-
+    font-weight:lighter ;
+    letter-spacing:.3 ;
+    color: rgba(255,255,255,.7);
 }
 .second_ul li{
     display: inline-block!important;
@@ -238,36 +227,47 @@ body{
 /* second-section */
 
 /* third-section */
-.third_margin{
-    margin:2rem 0 0 4rem!important;
-}
 .third_cards img{
-    /* position: absolute;
-    z-index: 400;
-    left:.8rem; */
-    border-radius: 10px;
-    box-shadow: 3px 3px 6px 0 rgba(0,0,0,.5); 
-    
+    z-index:7!important ;
 }
-.third_cards img:hover{
-    position: absolute;
-    right:0;
-    left: 0;
-    z-index: 500;
-    margin-top: 1.3rem!important;
-    margin-left: .75rem!important;
-    transform: scale(1.25,1.25);
-    -webkit-transition: .5s; 
-}
-.third_cards{
-    height: 11rem!important;
-    padding: 0!important;
-    
+.third_grey_box{
+    z-index: 6!important;
 }
 /* third-section */
 
 /* media_queries */
 @media only screen and (max-width:1024px){
+.landing_nav{
+    padding: 0 2rem!important;
+}
+.landing_image_col{
+    padding: 4rem 0 0 2rem!important;
+}
+.landing_video_col::after{
+    left:8rem;
+}
+.landing_text{
+    padding:.5rem 3rem 0 9rem;
+}
+.landing_btn{
+    margin:.5rem 1.3rem 0 0!important;
+    padding: .1rem .7rem!important;
+}
+.second_cards{
+    height: 7.5rem!important;
+}
+.second_container{
+    padding: 3.5rem 2rem 0!important;
+}
+.second_cards img{
+    left:.55rem;
+}
+.hover_grey_box{
+   top:6rem;
+}
+.second_cards img:hover{
+    margin-top: .9rem!important;
+}
 
 }
 @media only screen and (max-width:455px){
