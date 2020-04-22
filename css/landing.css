@@ -531,8 +531,53 @@ body{
 .second_cards img:hover{
     margin-top: .9rem!important;
 }
-
+.third_cards{
+    height: 7.5rem!important;
 }
+
+.third_cards img{
+    left:.55rem;
+}
+.third_cards img:hover{
+    margin-top: .9rem!important;
+}
+.second_grey_heading {
+    padding: 4rem .5rem 0;
+}
+.grey_para{
+    padding:0 2.5rem 0 .5rem!important;
+}
+.second_ul{
+    padding: 0 .5rem 0 .3rem;
+}
+.second_ul li{
+    padding:0 .2rem;
+}
+.lang_card{
+    height:7.5rem;
+}
+.see_more_container{
+    padding: 6rem 2rem 4rem ;
+}
+.genre_container{
+    padding: 10rem 2rem 0rem!important;
+}
+.genre_card{
+    height:7.5rem;
+}
+.genre_card img{
+    left:.55rem;
+}
+.genre_grey_box{
+    margin:0 1rem;
+}
+.genre_desc{
+    padding: 1.7rem .5rem 0;
+}
+.explore{
+    padding-top: .45rem!important;
+}
+
 @media only screen and (max-width:455px){
     .active a {
         border:0;
