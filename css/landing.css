@@ -159,7 +159,6 @@ body{
     background-color:#152535!important;
     border: 1.5px solid #fff!important;
     color: #fff!important;
-    box-shadow: 0px 3px 5px 0 rgba(0,0,0,.8)!important; 
 }
 .landing_mybtn:hover{
     color:#152535!important;
@@ -177,12 +176,6 @@ body{
     padding: .3rem .7rem!important;
     border-radius: 5px!important;
     box-shadow: 0px 3px 8px 0 rgba(0,0,0,.5)!important; 
-}
-.landing_btn:hover{
-    box-shadow: 0px 3px 30px 0 rgba(0,0,0,.8)!important; 
-    /* box-shadow: -5px -5px 10px rgba(255,255,255,0.05), 5px 5px 15px rgba(0,0,0,0.5)!important; */
-    transition: .5s ease!important;
-    
 }
 .landing_ul{
     display: inline-block;
@@ -208,6 +201,17 @@ body{
 .second_cards{
     height: 11rem!important;
     padding: 0!important;
+}
+.second_cards:hover .hover_grey_box{
+    display: block!important;
+}
+.second_cards:hover.second_cards img{
+    position: absolute!important;
+    z-index: 10!important;
+    margin-top: 1.3rem!important;
+    transform: scale(1.17,1.25);
+    -webkit-transition: .5s; 
+    cursor: pointer;
 }
 .second_container{
     padding: 3.5rem 4rem 0!important;
@@ -391,17 +395,13 @@ body{
     position: absolute;
     z-index: 11;
 }
-/* .top-rated-card img:hover{
-    box-shadow: 0px 3px 50px 0px rgba(0,0,0,.15);
-    transition: .5s ease;
-} */
 .top-rated-grey-box{
     margin:0 2rem;
     top:22rem!important;
     border-radius: 10px!important;
     padding: 0 1.5rem!important;
 }
-.top-rated-grey-box:hover{
+.top-rated-card:hover.top-rated-card img, .top-rated-card:hover .top-rated-grey-box{
     box-shadow: 0px 3px 50px 0px rgba(0,0,0,.15);
     transition: .5s ease;
 }
@@ -434,10 +434,13 @@ body{
 }
 .genre_grey_box{
     margin:0 1.5rem;
-
 }
 .genre_desc{
     padding: 1.7rem 1rem 0;
+}
+.genre_card:hover.genre_card img, .genre_card:hover .genre_grey_box {
+    box-shadow: 0px 3px 50px 0px rgba(0,0,0,.15);
+    transition: .5s ease;
 }
 /* genre */
 
@@ -576,6 +579,7 @@ body{
 }
 .explore{
     padding-top: .45rem!important;
+}
 }
 
 @media only screen and (max-width:455px){
