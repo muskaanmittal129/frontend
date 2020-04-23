@@ -148,7 +148,7 @@ body{
     color: #fff;
     position: absolute;
     z-index: 3;
-    top:23.5rem;
+    bottom: 0;
     left:4rem;
 }
 .landing_text{
@@ -175,6 +175,9 @@ body{
     font-weight: 100!important;
     padding: .3rem .7rem!important;
     border-radius: 5px!important;
+}
+.btn-primary:hover{
+    background-color: #0057ff!important;
 }
 .landing_ul{
     display: inline-block;
@@ -472,21 +475,30 @@ body{
     
 }
 .social_icons li{
-    display: inline!important;
+    display: inline-block!important;
     padding: .7rem;
     font-size: 1.8rem;
-    color: #a9b1b0;
+    
+}
+.social_icons a{
+    color: #a9b1b0!important;
 }
 .footer_links li{
     display: inline!important;
-    padding: 4rem;
+    margin: 4rem;
     font-size: 1rem;
     color: rgba(169,177,176,.7);
     font-weight: 500;
     letter-spacing: .5px;
 }
+.footer_links li:hover{
+    color:white;
+}
+.social_icons a:hover{
+    color: #fff!important;
+}
 .footer_second_row_links li{
-    padding: 2.5rem!important;
+    margin: 2.5rem!important;
 }
 .copyright{
     font-size: .7rem;
